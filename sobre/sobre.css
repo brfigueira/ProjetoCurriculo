@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Para posicionar tudo na parte inferior */
+    height: 100vh;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+.backgrounds {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; 
+}
+
+.backgrounds::before,
+.backgrounds::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 450px;
+    height: 450px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.backgrounds::before {
+    left: 0;
+    background-image: url('imagem/karatebg2.png');
+}
+
+
+.backgrounds::after {
+    right: 0;
+    background-size: contain;
+    background-image: url('imagem/karate3.png');
+}

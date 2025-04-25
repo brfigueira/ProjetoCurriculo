@@ -1,0 +1,82 @@
+body {
+    font-family: "Arial", sans-serif;
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: auto;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #6200ea;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    align-items: center;
+}
+
+main h1 {
+    font-size: 32px;
+    font-family: cursive;
+    margin-bottom: 20px;
+    color: blueviolet;
+}
+
+main ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+main ul li a button {
+    width: 200px;
+    height: 80px;
+    padding: 15px 25px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: scale(1.1);
+}
+
+main ul li a button:hover {
+    background-color: gray;
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1);}
+    50% { transform: scale(1.1);}
+    100% { transform: scale(1);}
+}
+
+main ul li a button {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+main ul li a button:active {
+    animation: pulse 0.3s ease-in-out;
+}
