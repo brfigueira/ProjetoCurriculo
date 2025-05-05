@@ -1,0 +1,24 @@
+body {
+    background-image: url(../imagem/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+#caixa { /* utilizando margin com auto*/
+    border: 1px solid red;
+    width: 360px;
+    height: 712px;
+    margin-right: auto;
+    margin-left: auto;
+    /* pode ser substituido com 
+    margin: auto; 
+    lembrando que existe uma regra que não deixa ele alinhar automaticamente o bot e o top*/
+}
+
+#perfil img {
+    width: 112px;
+    margin: auto;
+    border-radius: 50%;
+    /*mostrar o erro da margin e explicar o motivo na parte 5*/
+}

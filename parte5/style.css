@@ -1,0 +1,25 @@
+body {
+    background-image: url(../imagem/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+#caixa {
+    border: 1px solid red;
+    width: 360px;
+    margin: auto;
+    }
+
+#perfil {
+    text-align: center;
+}
+
+
+#perfil img {
+    width: 112px;
+    margin: auto;
+    border-radius: 50%;
+    
+}
+
