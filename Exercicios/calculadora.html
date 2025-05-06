@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <h2>Calculador de Média</h2>
+    <p>Insira as notas separadas por vírgula:</p>
+    <input type="number" id="nota01" placeholder="PRIMEIRA NOTA">
+    <input type="number" id="nota02" placeholder="SEGUNDA NOTA">
+    <input type="number" id="nota03" placeholder="TERCEIRA NOTA">
+    <input type="number" id="nota04" placeholder="QUARTA NOTA">
+    <button onclick="calcularMedia()">Calcular Média Final</button>
+    <p><span id="resultado">---</span></p>
+
+    <script>
+        function calcularMedia() {
+            let notas = [
+                document.getElementById('nota01').value.replace(',', '.'),
+                document.getElementById('nota02').value.replace(',', '.'),
+                document.getElementById('nota03').value.replace(',', '.'),
+                document.getElementById('nota04').value.replace(',', '.'),
+            ].map(num => parseFloat(num));
+
+            if (notas.some(nota => isNaN(nota) || nota < 0 || nota >10)) {
+
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
