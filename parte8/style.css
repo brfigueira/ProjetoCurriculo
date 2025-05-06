@@ -19,10 +19,9 @@ body * {
 }
 
 #caixa {
-    border: 1px solid red;
     width: 360px;
     height: 712px;
-    margin: auto;
+    margin: 56px auto 0px auto;
     }
 
 #perfil {
@@ -41,7 +40,19 @@ body * {
     font-weight: 500;
     line-height: 24px;
     font-size: 18px;    
+    margin-top: 8px;
 }
 
-/*Margin automatica de 8px, em todo o seu código*/
+/*Links*/
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /*gap coloca espaço entre os mesmos elementos*/
+}
 
+ul li {
+    border: 1px solid red;
+}
+/*Mostrar a ocupação do espaço dentro do box, e mostrar o border e assim subsequentemente, entre li e a*/

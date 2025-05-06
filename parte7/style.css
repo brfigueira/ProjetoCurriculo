@@ -19,10 +19,10 @@ body * {
 }
 
 #caixa {
-    border: 1px solid red;
     width: 360px;
     height: 712px;
-    margin: auto;
+    margin: 56px auto 0px auto;
+    /*Vamos falar sobre margin e remover a borda*/
     }
 
 #perfil {
@@ -41,6 +41,7 @@ body * {
     font-weight: 500;
     line-height: 24px;
     font-size: 18px;    
+    margin-top: 8px;
 }
 
 /*Margin automatica de 8px, em todo o seu código*/
