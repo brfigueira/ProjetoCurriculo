@@ -36,7 +36,7 @@ body * {
     border-radius: 50%;
 }
 
-#profile p {
+#perfil p {
     font-weight: 500;
     line-height: 24px;
     font-size: 18px;    
@@ -52,7 +52,7 @@ ul {
    
 }
 
-ul li a {
+ul li {
     border: 1px solid red;
     /*display: flex;
     flex-direction: row;

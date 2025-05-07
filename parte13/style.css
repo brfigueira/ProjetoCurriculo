@@ -22,9 +22,8 @@ body * {
     width: 360px;
     height: 712px;
     margin: 56px auto 0px auto;
-    /*padding: 0 24px;*/
-    /*Mostre o DevTools e fale sobre as ferramentas de desenvolvedor*/
-    }
+    padding: 0 24px;
+}
 
 #perfil {
     text-align: center;
@@ -41,7 +40,7 @@ body * {
 #profile p {
     font-weight: 500;
     line-height: 24px;
-    font-size: 18px;    
+    font-size: 18px;
     margin-top: 8px;
 }
 
@@ -51,7 +50,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
-   
+
 }
 
 ul li a {
